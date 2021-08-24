@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="https://unpkg.com/remarkdown.css/dist/remarkdown.css"/>
+    <!-- apparently there's not a css file there to import -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/nord@0.2.1"/> -->
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css3?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap">-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+    {% block local_styles %}
+    <link rel="stylesheet" href="static/css/nord.css"/>
+    <link rel="stylesheet" href="static/css/gruvbox.css"/>
+    <link rel="stylesheet" href="static/css/style.css"/>
+    {% endblock local_styles %}
+    <title>William T. Hollingsworth</title>
+    <nav class="remarkdown">
+        <span>William T. Hollingsworth</span>
+        <br>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="static/William_Hollingsworth_Resume.pdf" download>Resume</a>
+    </nav>
+    {% endblock head %}
+</head>
+<body class="remarkdown">
+    <main id="content"
+          class="remarkdown h1-underline h2-underline pre-tick em-underscore
+                 table-marker del-gfm hr-center">
+        {% block content %}
+        {{ html }}
+        {% endblock content %}
+    </main>
+    <footer id="colorschemeSelector">
+        <span>Site Theme: </span>
+        <button id="nord" class="remarkdown">Nord</button>
+        <button id="gruvbox" class="remarkdown">Gruvbox</button>
+    </footer>
+    <script src="static/js/colorscheme.js"></script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+@import "nord.css";
+@import "gruvbox.css";
+
+#colorschemeSelector {
+    text-align: center;
+}
+
+/* || MARKDOWN RENDERING ADDITIONS */
+/* a lot of this is taken from the remarkdown.css demo pages */
+.remarkdown {
+    font-family: "Courier Prime", monospace;
+    font-size: large;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+@media (min-width: 900px) {
+    body {
+        margin: 30px auto;
+        padding: 50px;
+    }
+}
+
+@media (min-width: 900px) and (prefers-color-scheme: dark) {
+    .nord body {
+        border: 4px solid var(--nord1);
+    }
+
+    .gruvbox body {
+        border: 4px solid var(--gruvbox_dark_fg3);
+    }
+}
+
+@media (min-width: 900px) and (prefers-color-scheme: light) {
+    .nord body {
+        border: 4px solid var(--nord4);
+    }
+
+    .gruvbox body {
+        border: 4px solid var(--gruvbox_light_fg3);
+    }
+}
+
+nav {
+    margin: 0 0 4em;
+    text-align: right;
+}
+
+nav > br {
+    display: none;
+}
+
+nav > span {
+    float: left;
+}
+
+@media (max-width: 900px) {
+    nav > * {
+        display: block;
+        padding-bottom: 0.4em;
+    }
+}
+
+.remarkdown strong::before,
+.remarkdown strong::after {
+    font-weight: normal;
+}
+
+.remarkdown strong {
+    font-weight: bold;
+}
+
+.remarkdown em::before,
+.remarkdwon em::after {
+    font-style: normal;
+}
+.remarkdown em {
+    font-style: italic;
+}
+
+
+/* This preserves whitespace from the markdown source, which is great for */
+/* your resume page, but not so glight for other pages.  If you want to    */
+/* preserve a particular line break, leave two spaces at the end of the   */
+/* line in the markdown source.                                           */
+/*
+.remarkdown p {
+    white-space: pre;
+}
+*/
+
+/*
+My markdown linter doesn't like these kinds of things.
+.remarkdown li::before {
+    padding-left: 4ch;
+}
+
+.remarkdown blockquote p {
+    padding-left: 4ch;
+}
+
+.remarkdown blockquote::after,
+.remarkdown blockquote::before {
+    padding-left: 4ch;
+}
+*/
+
+/* || Strikethrough (GitHub Flavored Markdown Extension) */
+/* this has the effect of resetting the text-decoration */
+/* apparently the CSS specification says that descendent elements */
+/* (like pseudo-elments such as ::before and ::after) follow the * /
+/* text-decoration property of the ancestor */
+.remarkdown.del-gfm del::before,
+.remarkdown.del-gfm del::after {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.remarkdown.del-gfm del {
+    text-decoration: line-through;
+}
+
+/* || Buttons */
+button {
+    border: none;
+}
+
+button::before {
+    content: "[";
+}
+
+button::after {
+    content: "]";
+}
+
+/* || Footnotes (GitHub Flavored Markdown Extension) */
+/* to make footnotes appear similar to how how they do in vim */
+/* not supported by remarkdown.css */
+sup a {
+    vertical-align: text-top;
+    font-size: large;
+}
+
+.remarkdown .footnotes li {
+    counter-increment: step-counter;
+}
+
+.remarkdown .footnotes li::before {
+    content: "[^"counter(step-counter)"]";
+    padding-left: 0px;
+}
+
+/* || Description Lists (GitHub Flavored Markdown Extension) */
+/* remarkdown.css doesn't support this */
+.remarkdown dd::before {
+    content: ":  ";
+    white-space: pre;
+}
+
+dd {
+    display: inline;
+    margin-inline-start: 0px;
+}
+
+dd p {
+    display: inline;
+}
+
+
+/* || COLORSCHEMES */
+.nord .remarkdown ::before,
+.nord .remarkdown ::after {
+    color: var(--nord9);
+}
+
+@media (prefers-color-scheme: dark) {
+    .nord .remarkdown {
+        background-color: var(--nord0);
+        color: var(--nord6);
+    }
+
+    .gruvbox .remarkdown {
+        background-color: var(--gruvbox_dark_bg);
+        color: var(--gruvbox_dark_fg);
+    }
+
+    .nord #content::before {
+        content: "<!-- vim: set ft=markdown ts=4 sw=4 et ai : -->";
+        color: var(--nord3);
+    }
+
+    .gruvbox #content::before {
+        content: "<!-- vim: set ft=markdown ts=4 sw=4 et ai : -->";
+        color: var(--gruvbox_dark_fg3);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .nord .remarkdown {
+        background-color: var(--nord6);
+        color: var(--nord0);
+    }
+
+    .gruvbox .remarkdown {
+        background-color: var(--gruvbox_light_bg);
+        color: var(--gruvbox_light_fg);
+    }
+
+    /* I guess Arctic Ice Studio doesn't believe in light color schemes for */
+    /* porgramming...                                                       */
+    .nord #content::before {
+        content: "";
+    }
+
+    .gruvbox #content::before {
+        content: "<!-- vim: set ft=markdown ts=4 sw=4 et ai : -->";
+        color: var(--gruvbox_light_fg3);
+    }
+}
+
+/* || Headings */
+.nord .remarkdown h1,
+.nord .remarkdown h2 {
+    color: var(--nord8);
+}
+
+@media (prefers-color-scheme: dark) {
+    .gruvbox .remarkdown h1,
+    .gruvbox .remarkdown h2 {
+        color: var(--gruvbox_dark_green_bold);
+        font-weight: bold;
+    }
+
+    .gruvbox .remarkdown h1::after,
+    .gruvbox .remarkdown h2::after {
+        color: var(--gruvbox_dark_fg3);
+        font-weight: normal;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .gruvbox .remarkdown h1,
+    .gruvbox .remarkdown h2 {
+        color: var(--gruvbox_light_green_bold);
+        font-weight: bold;
+    }
+
+    .gruvbox .remarkdown h1::after,
+    .gruvbox .remarkdown h2::after {
+        color: var(--gruvbox_light_fg3);
+        font-weight: normal;
+    }
+}
+
+.nord .remarkdown h3,
+.nord .remakrdown h4 {
+    color: var(--nord8);
+}
+
+@media (prefers-color-scheme: dark) {
+    .gruvbox .remarkdown h3,
+    .gruvbox .remarkdown h4 {
+        color: var(--gruvbox_dark_yellow_bold);
+        font-weight: bold;
+    }
+
+    .gruvbox .remarkdown h3::before,
+    .gruvbox .remarkdown h4::before {
+        color: var(--gruvbox_dark_orange);
+        font-weight: normal;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .gruvbox .remarkdown h3,
+    .gruvbox .remarkdown h4 {
+        color: var(--gruvbox_light_yellow_bold);
+        font-weight: bold;
+    }
+
+    .gruvbox .remarkdown h3::before,
+    .gruvbox .remarkdown h4::before {
+        color: var(--gruvbox_light_red);
+        font-weight: normal;
+    }
+}
+
+.nord .remarkdown h5,
+.nord .remarkdown h6 {
+    color: var(--nord8);
+}
+
+@media (prefers-color-scheme: dark) {
+    .gruvbox .remarkdown h5,
+    .gruvbox .remarkdown h6 {
+        color: var(--gruvbox_yellow);
+        font-weight: bold;
+    }
+
+    .gruvbox .remarkdown h5::before,
+    .gruvbox .remarkdown h6::before {
+        color: var(--gruvbox_orange);
+        font-weight: normal;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .gruvbox .remarkdown h3,
+    .gruvbox .remarkdown h4,
+    .gruvbox .remarkdown h5,
+    .gruvbox .remarkdown h6 {
+        color: var(--gruvbox_light_yellow_bold);
+        font-weight: bold;
+    }
+
+    .gruvbox .remarkdown h3::before,
+    .gruvbox .remarkdown h4::before,
+    .gruvbox .remarkdown h5::before,
+    .gruvbox .remarkdown h6::before {
+        color: var(--gruvbox_light_red);
+        font-weight: normal;
+    }
+}
+
+/* || Links and Buttons */
+.nord .remarkdown a {
+    color: var(--nord8);
+    text-decoration: none;
+}
+
+.gruvbox .remarkdown a {
+    text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    .gruvbox .remarkdown a {
+        color: var(--gruvbox_dark_fg3);
+    }
+
+    .gruvbox .remarkdown a::before,
+    .gruvbox .remarkdown a::after {
+        color: var(--gruvbox_dark_purple);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .gruvbox .remarkdown a {
+        color: var(--gruvbox_light_fg3);
+    }
+
+    .gruvbox .remarkdown a::before,
+    .gruvbox .remarkdown a::after {
+        color: var(--gruvbox_light_purple);
+    }
+}
+
+.nord .remarkdown button {
+    color: var(--nord8);
+}
+
+.nord .remarkdown button::before,
+.nord .remarkdown button::after {
+    color: var(--nord9);
+}
+
+@media (prefers-color-scheme: dark) {
+    .gruvbox .remarkdown button {
+        color: var(--gruvbox_dark_fg3);
+        text-decoration: underline;
+    }
+
+    .gruvbox .remarkdown button::before,
+    .gruvbox .remarkdown button::after {
+        color: var(--gruvbox_dark_fg);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .gruvbox .remarkdown button {
+        color: var(--gruvbox_light_fg3);
+        text-decoration: underline;
+    }
+
+    .gruvbox .remarkdown button::before,
+    .gruvbox .remarkdown button::after {
+        color: var(--gruvbox_light_fg);
+    }
+}
+
+/* || Code Blocks */
+.nord .remarkdown pre,
+.nord .remarkdown code {
+    color: var(--nord8);
+}
+
+@media (prefers-color-scheme: dark) {
+    .gruvbox .remarkdown code {
+        color: var(--gruvbox_dark_purple);
+    }
+
+    .gruvbox .remarkdown pre code {
+        color: var(--gruvbox_dark_aqua);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .gruvbox .remarkdown code {
+        color: var(--gruvbox_light_purple);
+    }
+
+    .gruvbox .remarkdown pre code {
+        color: var(--gruvbox_light_aqua);
+    }
+}
+
+/* || Block Quotes */
+.nord .remarkdown blockquote::before,
+.nord .remarkdown blockquote::after {
+    color: var(--nord8);
+}
+
+@media (prefers-color-scheme: dark) {
+    .gruvbox .remarkdown blockquote::before,
+    .gruvbox .remarkdown blockquote::after {
+        color: var(--gruvbox_dark_gray);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .gruvbox .remarkdown blockquote::before,
+    .gruvbox .remarkdown blockquote::after {
+        color: var(--gruvbox_light_gray);
+    }
+}
+
+/* || Definition Lists */
+.nord dt {
+    color: var(--nord8);
+}
+
+.nord dd::before,
+.nord dd::after {
+    color: var(--nord9);
+}
+
+/* || Lists */
+@media (prefers-color-scheme: dark) {
+    .gruvbox .remarkdown li {
+        color: var(--gruvbox_dark_aqua);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .gruvbox .remarkdown li {
+        color: var(--gruvbox_light_aqua);
+    }
+}
+
+/* || Emphasis Sytling */
+@media (prefers-color-scheme: dark) {
+    .gruvbox .remarkdown strong::before,
+    .gruvbox .remarkdown strong::after,
+    .gruvbox .remarkdown em::before,
+    .gruvbox .remarkdown em::after {
+        color: var(--gruvbox_dark_red);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .gruvbox .remarkdown strong::before,
+    .gruvbox .remarkdown strong::after,
+    .gruvbox .remarkdown em::before,
+    .gruvbox .remarkdown em::after {
+        color: var(--gruvbox_light_red);
+    }
+}
+
+/* || Footnotes */
+.nord .remarkdown .footnotes a::before,
+.nord .remarkdown .footnotes a::after {
+    color: var(--nord8);
+}
+
+.nord .remarkdown .footnotes li::before,
+.nord .remarkdown .footnotes li::after {
+    color: var(--nord8);
+}
+
+.nord .remarkdown sup a::before,
+.nord .remarkdown sup a::after {
+    color: var(--nord8);
+}

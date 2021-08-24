@@ -1,0 +1,7 @@
+{% extends "base" %}
+
+{% block content %}
+<div id="home" class="remarkdown a-showurl">
+    {{ super() }}
+</div>
+{% endblock content %}

@@ -1,0 +1,9 @@
+[production]
+port = 443
+
+#[production.tls]
+#certs = "/etc/letsencrypt/live/drwhattheheck.dev/fullchain.pem"
+#key = "/etc/letsencrypt/live/drwhattheheck.dev/privkey.pem"
+
+[development]
+port = 8000
