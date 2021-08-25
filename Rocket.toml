@@ -1,9 +1,9 @@
 [production]
 port = 443
 
-#[production.tls]
-#certs = "/etc/letsencrypt/live/drwhattheheck.dev/fullchain.pem"
-#key = "/etc/letsencrypt/live/drwhattheheck.dev/privkey.pem"
+[production.tls]
+certs = "/etc/letsencrypt/live/wthollingsworth.com/fullchain.pem"
+key = "/etc/letsencrypt/live/wthollingsworth.com/privkey.pem"
 
-[development]
-port = 8000
+#[development]
+#port = 8000
