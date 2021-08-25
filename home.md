@@ -1,8 +1,11 @@
 Portfolio
 =========
 
-Hi!  I'm Will, a passionate software engineer and teacher who wants to help
-make a positive impact in the field of education.
+Hi!  I'm Will, an intrinsically motivated software engineer and educator
+comfortable solving problems independently and collaboratively with a
+variety of languages and tools.  I'm passionate about educational technology
+that supports students and teachers and values the impact that teachers can
+have on students.
 
 GitHub: [wthollingsworth](https://github.com/wthollingsworth) \
 LinkedIn: [wthollingsworth](https://www.linkedin.com/in/wthollingsworth)
@@ -11,16 +14,19 @@ LinkedIn: [wthollingsworth](https://www.linkedin.com/in/wthollingsworth)
 About
 -----
 
-Discovering my passion for education was a happy accident.  In graduate school,
-I was appointed Head TA, a position I was initially reluctant to fill.  As an
-introvert that can be somewhat shy, the thought of being the figure of authority
-guiding 20 or more students was a little scary.  But over time, I found it to be
-one of the most rewarding experiences I'd had.
+I've been excited about computers and all of the opportunities they can create
+since I was five or six years old using my grandmother's computer to play
+solitaire or browse the web with Compuserve.  My excitement for education
+however, was a happy accident.  I was appointed Head TA in graduate school.  As
+an introvert, the idea of leading a room of twenty or so people didn't excite
+me at first.  But over time I found that guiding these students through their
+work was one of the most rewarding experiences I've ever had, and one that has
+influenced my career path.  My experiences teaching and mentoring have made me a
+better collaborator and communicator.
 
-After an unfilfilling first attempt as a software engineer, I pivoted from
-finanical technology to education as a teacher.  I'm now looking to take the
-next step and combine my passions for software and education and help make a
-difference for as many students as possible.
+Most of my programming experience has been with C and C++ with an object
+oriented methodology, but I have also worked extensively with Java, Python,
+and Javascript and am always excited to learn more.
 
 ### Work Experience
 
