@@ -1,11 +1,11 @@
 Portfolio
 =========
 
-Hi!  I'm Will, an intrinsically motivated software engineer and educator
-comfortable solving problems independently and collaboratively with a
-variety of languages and tools.  I'm passionate about educational technology
-that supports students and teachers and values the impact that teachers can
-have on students.
+Hi!  I'm Will, an motivated software engineer and educator comfortable solving
+problems independently and collaboratively with a variety of languages and
+tools.  I'm passionate about educational technology that supports students and
+teachers, especially those which value the impact that teachers can have on
+students.
 
 GitHub: [wthollingsworth](https://github.com/wthollingsworth) \
 LinkedIn: [wthollingsworth](https://www.linkedin.com/in/wthollingsworth)
@@ -16,17 +16,21 @@ About
 
 I've been excited about computers and all of the opportunities they can create
 since I was five or six years old using my grandmother's computer to play
-solitaire or browse the web with Compuserve.  My excitement for education
-however, was a happy accident.  I was appointed Head TA in graduate school.  As
-an introvert, the idea of leading a room of twenty or so people didn't excite
-me at first.  But over time I found that guiding these students through their
-work was one of the most rewarding experiences I've ever had, and one that has
-influenced my career path.  My experiences teaching and mentoring have made me a
-better collaborator and communicator.
+solitaire or browse the web with Compuserve.  Later, my excitement for education
+arose once I was appointed Head TA in graduate school.  The idea of leading a
+room of twenty or so people didn't excite me at first, but over time I found
+that guiding students through their work was one of the most rewarding
+experiences I've ever had.  My experiences teaching and mentoring have served to
+make me a better collaborator and communicator, and kept me familiar with
+essential data structures and algorithms.  Now, I want to use my skills to help
+make software that cultivates student success and equitable learning experiences,
+and allows teachers to spend more time on what really matters: teaching.
 
-Most of my programming experience has been with C and C++ with an object
-oriented methodology, but I have also worked extensively with Java, Python,
-and Javascript and am always excited to learn more.
+Most of my programming experience has been with an object oriented methodology
+in languages like C and C++, but I have also worked extensively with Java,
+Python, and Javascript.  That said, I am always excited to learn more; I'm
+currently working to pick up Express.JS, MongoDB + Mongoose, and Rust as well.
+
 
 ### Work Experience
 
@@ -101,10 +105,11 @@ GitHub: [wthollingsworth/texify](github.com/wthollingsworth/texify)
 Contact
 -------
 
-I'm currently looking for full-time software engineering work.  Most of my
-experience is with C and C++, but the mission is far more important to me
-than the tech stack and I love learning new programming languages and tools.
-If you think I might be able to help you, please get in touch.
+I'm currently looking for full-time software engineering work, preferrably
+with an educational technology company.  Most of my experience is with C
+and C++, but the mission is far more important to me than the tech stack and
+I love learning new programming languages and tools.  If you think I might be
+able to help you, please get in touch.
 
 E-mail: william DOT t DOT hollingsworth AT protonmail DOT com \
 LinkedIn: [wthollingsworth](https://www.linkedin.com/in/wthollingsworth)
