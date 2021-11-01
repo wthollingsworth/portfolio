@@ -1,7 +1,7 @@
 Portfolio
 =========
 
-Hi!  I'm Will, an motivated software engineer and educator comfortable solving
+Hi!  I'm Will, a motivated software engineer and educator comfortable solving
 problems independently and collaboratively with a variety of languages and
 tools.  I'm passionate about educational technology that supports students and
 teachers, especially those which value the impact that teachers can have on
