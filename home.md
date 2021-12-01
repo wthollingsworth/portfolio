@@ -34,6 +34,7 @@ currently working to pick up Express.JS, MongoDB + Mongoose, and Rust as well.
 
 ### Work Experience
 
+- Software Engineer, Panorama Education, 2021-present
 - Computer Science Teacher, Loudoun County Public Schools, 2018-2021
 - Software Engineer, SWIFT, 2016-2018
 
@@ -104,12 +105,6 @@ GitHub: [wthollingsworth/texify](github.com/wthollingsworth/texify)
 <a name="contact">⚓</a>
 Contact
 -------
-
-I'm currently looking for full-time software engineering work, preferrably
-with an educational technology company.  Most of my experience is with C
-and C++, but the mission is far more important to me than the tech stack and
-I love learning new programming languages and tools.  If you think I might be
-able to help you, please get in touch.
 
 E-mail: william DOT t DOT hollingsworth AT protonmail DOT com \
 LinkedIn: [wthollingsworth](https://www.linkedin.com/in/wthollingsworth)
