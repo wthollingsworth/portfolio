@@ -54,10 +54,11 @@ Projects
 --------
 
 ### This Portfolio
-This portfolio was created from scratch as a way to learn some web development basics, as well as play around with the [Rust](https://www.rust-lang.org) programming language
+This portfolio was created from scratch as a way to learn some web development basics,
+as well as play around with the [Rust](https://www.rust-lang.org) programming language.
 
 Languages: Rust, HTML, CSS, Javascript \
-GitHub: [wthollingsworth/portfolio](github.com/wthollingsworth/portfolio)
+GitHub: [wthollingsworth/portfolio](https://www.github.com/wthollingsworth/portfolio)
 
 ### pomodoro.nvim
 
@@ -68,7 +69,7 @@ described in the book as closely as possible, including a "manual" windup of
 timer, which most software implementations prefer to automate.
 
 Languages: Lua, Vimscript \
-GitHub: [wthollingsworth/pomodoro.nvim](github.com/wthollingsworth/pomodoro.nvim)
+GitHub: [wthollingsworth/pomodoro.nvim](https://www.github.com/wthollingsworth/pomodoro.nvim)
 
 ### ziptools and zippy
 
@@ -88,8 +89,8 @@ location.  Zippy provides a CLI that is intended for the workflow of checking
 on and collecting student work.
 
 Languages: Bash \
-GitHub: [wthollingsworth/zippy](github.com/wthollingsworth/zippy) \
-GitHub: [wthollingsworth/ziptools](github.com/wthollingsworth/ziptools)
+GitHub: [wthollingsworth/zippy](https://www.github.com/wthollingsworth/zippy) \
+GitHub: [wthollingsworth/ziptools](https://www.github.com/wthollingsworth/ziptools)
 
 ### texify
 
@@ -100,7 +101,7 @@ the process so that a single command is used for both cases, which also results
 in a significant speedup compared to running the commands manually.
 
 Languages: Bash \
-GitHub: [wthollingsworth/texify](github.com/wthollingsworth/texify)
+GitHub: [wthollingsworth/texify](https://www.github.com/wthollingsworth/texify)
 
 <a name="contact">⚓</a>
 Contact
